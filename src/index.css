@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #7b42b3;
+  --color-secondary: #9216b4;
+  --color-complimentary: #506cff;
+  --color-gray-background-light: #f7fafc;
+  --color-gray-background-dark: #2d3748;
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f7fafc;
+  --color-border: #e2e8f0;
+}
+
+.dark {
+  --color-primary: #7b42b3;
+  --color-secondary: #ffffff;
+  --color-complimentary: #cfcd4a;
+  --color-gray-background-light: #334155;
+  --color-gray-background-dark: #e7e7e7;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #cbd5e0;
+  --color-bg-primary: #1a202c;
+  --color-bg-secondary: #2d3748;
+  --color-border: #4a5568;
+}
+
+body {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.svg-normal .svg-icon svg {
+  fill: var(--color-text-primary);
+}
+.grayIcon .svg-icon svg path {
+  stroke: var(--color-text-primary);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-text-fill-color: var(--color-text-primary);
+  -webkit-box-shadow: 0 0 0 30px var( --color-bg-primary) inset !important;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-gray-background-dark {
+  background-color: var(--color-gray-background-dark);
+}
+
+header.bg-black {
+  background-color: var(--color-bg-primary);
+  transition: background-color 0.3s;
+}
+
+.login-form-container {
+  background-color: var(--color-bg-secondary);
+  transition: background-color 0.3s;
+}
+
+.login-card {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-label {
+  color: var(--color-text-secondary);
+}
+
+.login-input {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.login-input:focus {
+  border-color: var(--color-primary);
+}
+
+.login-divider {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+}
+
+.login-link {
+  color: var(--color-text-secondary);
+}
+
+.login-link:hover {
+  color: var(--color-primary);
+}
+
+.login-link-primary {
+  color: var(--color-primary);
+}
+
+.chat-container {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.chat-header {
+  transition: border-color 0.3s;
+}
+
+.chat-message-bot {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.chat-message-user {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.chat-input-area {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.chat-input {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.pdf-container {
+  transition: background-color 0.3s;
+}
+
+.home-background {
+  transition: background-color 0.3s;
+}
+
+.signup-error {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.dark .text-red-600 {
+  color: #ff8080;
+}
+
+.dark .border-red-500 {
+  border-color: #ff6666;
+}
+
+.dark .ring-red-500 {
+  --tw-ring-color: #ff6666;
+}
+
+.loader {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-button {
+  background-color: var(--color-primary);
+  color: white;
+}
